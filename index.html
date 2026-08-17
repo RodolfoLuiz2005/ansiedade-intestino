@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sua Ansiedade Pode Estar Vindo da Barriga — R$ 38,90</title>
+    <meta name="description"
+        content="A ligação intestino-cérebro explicada de forma acolhedora: o que está causando, o que fazer e os sinais precoces de um intestino desregulado." />
+    <meta property="og:title" content="Sua Ansiedade Pode Estar Vindo da Barriga" />
+    <meta property="og:description"
+        content="E quase ninguém te falou isso. Ebook sobre o eixo intestino-cérebro por R$ 38,90." />
+    <meta property="og:type" content="product" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <style>
+        :root {
+            --cream: #f7ede7;
+            --cream-2: #fdf7f3;
+            --ink: #4a6178;
+            --body: #6b6259;
+            --rose: #dcb4b0;
+            --lilac: #c8c0dd;
+            --petrol: #8fb2b4;
+            --sage: #a9c3a8;
+            --line: rgba(74, 97, 120, 0.14);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--cream);
+            color: var(--body);
+            font-family: "Nunito Sans", system-ui, sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Playfair Display", Georgia, serif;
+            font-weight: 500;
+            color: var(--ink);
+            line-height: 1.2;
+        }
+
+        .wrap {
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 108px 0;
+        }
+
+        .eyebrow {
+            font-size: 0.72rem;
+            letter-spacing: 0.26em;
+            text-transform: uppercase;
+            color: #9c8f85;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .lead {
+            font-size: 1.08rem;
+            max-width: 60ch;
+            color: var(--body);
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            background: var(--ink);
+            color: var(--cream-2);
+            text-decoration: none;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 18px 34px;
+            border-radius: 999px;
+            box-shadow: 0 16px 30px -18px rgba(74, 97, 120, 0.8);
+            transition:
+                transform 0.3s ease,
+                background 0.3s ease;
+        }
+
+        .btn-comprar:hover {
+            background: #3c5266;
+            transform: translateY(-2px);
+        }
+
+        .btn-comprar.lg {
+            font-size: 1.06rem;
+            padding: 21px 44px;
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            min-height: 100svh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 90px;
+            background:
+                radial-gradient(70% 60% at 78% 30%, rgba(200, 192, 221, 0.35), transparent 62%),
+                radial-gradient(60% 50% at 12% 78%, rgba(220, 180, 176, 0.32), transparent 60%),
+                var(--cream);
+            overflow: hidden;
+        }
+
+        .hero-art {
+            position: absolute;
+            right: -6%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: min(560px, 62vw);
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .hero .wrap {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.3rem, 6vw, 4.1rem);
+            max-width: 16ch;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: #7a8fa4;
+        }
+
+        .hero .sub {
+            margin-top: 22px;
+            font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+            max-width: 40ch;
+            color: #5f7d94;
+        }
+
+        .hero .ident {
+            margin-top: 26px;
+            max-width: 44ch;
+            font-style: italic;
+            color: #837a70;
+        }
+
+        .hero-actions {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .note {
+            font-size: 0.86rem;
+            color: #9c8f85;
+        }
+
+        /* VALIDAÇÃO */
+        .valid {
+            background: var(--cream-2);
+        }
+
+        .valid h2 {
+            font-size: clamp(1.85rem, 4vw, 2.8rem);
+            max-width: 18ch;
+        }
+
+        .axis {
+            margin-top: 54px;
+            display: grid;
+            gap: 26px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            align-items: start;
+        }
+
+        .axis-step {
+            text-align: center;
+            padding: 0 8px;
+        }
+
+        .axis-step .circle {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+            display: grid;
+            place-items: center;
+            background: rgba(143, 178, 180, 0.18);
+        }
+
+        .axis-step svg {
+            stroke: #6c8f92;
+        }
+
+        .axis-step h4 {
+            font-family: "Playfair Display", serif;
+            color: var(--ink);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .axis-step p {
+            font-size: 0.95rem;
+        }
+
+        /* CARDS */
+        .cards {
+            margin-top: 50px;
+            display: grid;
+            gap: 22px;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        }
+
+        .card {
+            background: var(--cream-2);
+            border-radius: 18px;
+            padding: 36px 30px;
+            border: 1px solid var(--line);
+            box-shadow: 0 20px 40px -34px rgba(74, 97, 120, 0.6);
+        }
+
+        .card .dot {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.98rem;
+        }
+
+        .cause-1 .dot {
+            background: rgba(220, 180, 176, 0.35);
+        }
+
+        .cause-2 .dot {
+            background: rgba(200, 192, 221, 0.4);
+        }
+
+        .cause-3 .dot {
+            background: rgba(143, 178, 180, 0.3);
+        }
+
+        .cause-1 .dot svg {
+            stroke: #b78882;
+        }
+
+        .cause-2 .dot svg {
+            stroke: #8a80ab;
+        }
+
+        .cause-3 .dot svg {
+            stroke: #6c8f92;
+        }
+
+        .causes {
+            background: var(--cream);
+        }
+
+        .solutions {
+            background: linear-gradient(180deg, rgba(169, 195, 168, 0.16), rgba(169, 195, 168, 0.05));
+        }
+
+        .sol-card {
+            background: #fbfaf5;
+            border: 1px solid rgba(120, 150, 118, 0.25);
+            border-radius: 18px;
+        }
+
+        .sol-card .dot {
+            background: rgba(169, 195, 168, 0.35);
+            border-radius: 50%;
+        }
+
+        .sol-card .dot svg {
+            stroke: #5f7d5e;
+        }
+
+        .sol-card h3 {
+            color: #43604a;
+        }
+
+        /* BÔNUS */
+        .bonus-card {
+            border-radius: 22px;
+            background: var(--cream-2);
+            border: 1px solid rgba(220, 180, 176, 0.6);
+            padding: 48px clamp(26px, 5vw, 56px);
+            box-shadow: 0 30px 60px -46px rgba(74, 97, 120, 0.7);
+        }
+
+        .bonus-card h2 {
+            font-size: clamp(1.7rem, 3.6vw, 2.4rem);
+            margin: 8px 0 14px;
+        }
+
+        .signs {
+            margin-top: 30px;
+            list-style: none;
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .signs li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            font-size: 0.97rem;
+        }
+
+        .signs span {
+            flex: none;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--rose);
+            margin-top: 0.6em;
+        }
+
+        /* RESPONSABILIDADE */
+        .respo {
+            background: var(--cream-2);
+        }
+
+        .respo-inner {
+            max-width: 62ch;
+            margin: 0 auto;
+            text-align: center;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            padding: 40px 0;
+        }
+
+        .respo-inner h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            background:
+                radial-gradient(70% 70% at 50% 0%, rgba(200, 192, 221, 0.35), transparent 65%),
+                var(--cream);
+        }
+
+        .cta h2 {
+            font-size: clamp(1.9rem, 4.4vw, 3rem);
+            max-width: 19ch;
+            margin: 0 auto;
+        }
+
+        .cta p {
+            margin: 20px auto 0;
+            max-width: 50ch;
+        }
+
+        .price {
+            margin: 36px 0 26px;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(2.6rem, 7vw, 3.8rem);
+            color: var(--ink);
+        }
+
+        .price small {
+            display: block;
+            font-family: "Nunito Sans", sans-serif;
+            font-size: 0.76rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #9c8f85;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--line);
+            font-size: 0.84rem;
+            color: #9c8f85;
+        }
+
+        footer .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 640px) {
+            section {
+                padding: 74px 0;
+            }
+
+            .btn-comprar {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero-art {
+                opacity: 0.25;
+                right: -30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <svg class="hero-art" viewBox="0 0 420 420" fill="none" stroke="#4a6178" stroke-width="1.2"
+            stroke-linecap="round" aria-hidden="true">
+            <circle cx="210" cy="210" r="180" stroke="rgba(74,97,120,.18)" />
+            <circle cx="210" cy="210" r="140" stroke="rgba(74,97,120,.12)" />
+            <path d="M150 96c0 26 24 30 24 54s-34 26-34 52 40 24 40 50-38 26-38 52 30 30 62 30"
+                stroke="rgba(74,97,120,.5)" stroke-width="2" />
+            <path d="M204 96c0 30 30 32 30 58s-38 28-38 54 44 22 44 48-40 30-40 56" stroke="rgba(184,140,136,.65)"
+                stroke-width="2" />
+            <path d="M262 130c22 8 34 26 34 48" stroke="rgba(140,132,176,.6)" stroke-width="2" />
+            <circle cx="150" cy="96" r="5" fill="rgba(74,97,120,.35)" stroke="none" />
+            <circle cx="204" cy="96" r="5" fill="rgba(184,140,136,.5)" stroke="none" />
+        </svg>
+        <div class="wrap">
+            <p class="eyebrow" data-aos="fade-up">Eixo intestino–cérebro</p>
+            <h1 data-aos="fade-up" data-aos-delay="80">
+                Sua Ansiedade Pode Estar Vindo da <em>Barriga</em>
+            </h1>
+            <p class="sub" data-aos="fade-up" data-aos-delay="150">E quase ninguém te falou isso.</p>
+            <p class="ident" data-aos="fade-up" data-aos-delay="220">
+                Você já tentou terapia, respiração, meditação, chá, aplicativo de mindfulness. Ajudou um
+                pouco. Mas aquele aperto continua voltando — e ninguém olhou pro seu intestino.
+            </p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="#" class="btn-comprar">Quero Entender Minha Ansiedade — R$ 38,90</a>
+                <span class="note">Leitura leve · acesso imediato</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="valid">
+        <div class="wrap">
+            <p class="eyebrow" data-aos="fade-up">Antes de mais nada</p>
+            <h2 data-aos="fade-up">Você Não Está Imaginando</h2>
+            <p class="lead" data-aos="fade-up" style="margin-top: 20px">
+                A maior parte da serotonina do corpo é produzida no intestino, e existe um nervo grosso
+                ligando ele direto ao cérebro. Não é metáfora: o que acontece na sua barriga chega na sua
+                cabeça — e volta. Por isso ansiedade e desconforto digestivo tantas vezes andam juntos.
+            </p>
+            <div class="axis">
+                <div class="axis-step" data-aos="fade-up">
+                    <div class="circle">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke-width="1.4">
+                            <path
+                                d="M8 5c-3 1-4 4-3 6-2 2-1 6 2 7 1 2 5 3 6 0 2 1 5-1 5-4 2-2 1-6-2-7-1-2-5-3-6-1-.5-1-1.3-1.3-2-1z"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h4>O cérebro sente</h4>
+                    <p>Preocupação, aperto no peito, pensamento acelerado — o que você já conhece bem.</p>
+                </div>
+                <div class="axis-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="circle">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke-width="1.4">
+                            <path d="M12 3v6M9 6l3-3 3 3M12 21v-6M9 18l3 3 3-3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h4>A via de mão dupla</h4>
+                    <p>O nervo vago leva sinal nos dois sentidos. Intestino inflamado manda recado pra cima.</p>
+                </div>
+                <div class="axis-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="circle">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke-width="1.4">
+                            <path d="M9 4v5c0 3-4 3-4 6s3 4 5 4h6c2 0 4-1 4-3s-3-3-3-6V4" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h4>A barriga responde</h4>
+                    <p>Inchaço, digestão travada, alteração no ritmo — sintomas que você tratava como separados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="causes">
+        <div class="wrap">
+            <p class="eyebrow" data-aos="fade-up">Capítulo 2</p>
+            <h2 data-aos="fade-up" style="font-size: clamp(1.85rem, 4vw, 2.8rem)">O Que Está Causando Isso</h2>
+            <div class="cards">
+                <article class="card cause-1" data-aos="fade-up">
+                    <div class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <path d="M12 4v8l5 3" stroke-linecap="round" />
+                            <circle cx="12" cy="12" r="9" />
+                        </svg></div>
+                    <h3>Estresse crônico</h3>
+                    <p>Cortisol alto por meses altera motilidade, permeabilidade e o equilíbrio da flora. O corpo
+                        entende urgência constante e desliga o que é "não essencial" — inclusive digerir bem.</p>
+                </article>
+                <article class="card cause-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <path d="M5 8h14l-1.4 11a2 2 0 0 1-2 1.8H8.4a2 2 0 0 1-2-1.8z" stroke-linejoin="round" />
+                            <path d="M9 8V6a3 3 0 0 1 6 0v2" stroke-linecap="round" />
+                        </svg></div>
+                    <h3>Alimentação ultraprocessada</h3>
+                    <p>Pouca fibra, muito emulsificante e açúcar. As bactérias boas ficam sem alimento e perdem espaço —
+                        e o efeito disso não fica só na digestão.</p>
+                </article>
+                <article class="card cause-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <rect x="3" y="9" width="18" height="6" rx="3" />
+                            <path d="M12 9v6" />
+                        </svg></div>
+                    <h3>Uso excessivo de remédios</h3>
+                    <p>Antibióticos repetidos, anti-inflamatórios e protetores gástricos por tempo indeterminado deixam
+                        rastro no ambiente intestinal.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions">
+        <div class="wrap">
+            <p class="eyebrow" data-aos="fade-up">Capítulo 3</p>
+            <h2 data-aos="fade-up" style="font-size: clamp(1.85rem, 4vw, 2.8rem)">O Que Fazer a Respeito</h2>
+            <p class="lead" data-aos="fade-up" style="margin-top: 14px">
+                Nada de protocolo radical. Três frentes, aplicadas com calma e no seu ritmo.
+            </p>
+            <div class="cards">
+                <article class="card sol-card" data-aos="fade-up">
+                    <div class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <path d="M12 20c0-6 3-10 8-11-1 6-4 10-8 11z" stroke-linejoin="round" />
+                            <path d="M12 20c0-5-2-8-6-9 .6 5 2.6 8 6 9z" stroke-linejoin="round" />
+                        </svg></div>
+                    <h3>Realimentar a flora</h3>
+                    <p>Fibras, fermentados e variedade — o que incluir primeiro e em que quantidade pra não piorar o
+                        inchaço no começo.</p>
+                </article>
+                <article class="card sol-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <path d="M4 14c3-1 4-4 8-4s5 3 8 4" stroke-linecap="round" />
+                            <circle cx="12" cy="6" r="2.4" />
+                        </svg></div>
+                    <h3>Baixar o cortisol de verdade</h3>
+                    <p>Rotinas curtas que atuam no nervo vago, com efeito sobre digestão — não só sobre o humor.</p>
+                </article>
+                <article class="card sol-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <path d="M5 12h4l2-5 3 10 2-5h3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></div>
+                    <h3>Observar e ajustar</h3>
+                    <p>Um registro simples de sintoma e refeição pra descobrir os seus gatilhos, em vez de copiar a
+                        dieta de outra pessoa.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="bonus-card" data-aos="fade-up">
+                <p class="eyebrow">Bônus incluso</p>
+                <h2>Sinais precoces de um intestino desregulado</h2>
+                <p class="lead">
+                    Não é uma lista pra te assustar. É pra você reconhecer cedo o que costuma passar
+                    despercebido por anos.
+                </p>
+                <ul class="signs">
+                    <li><span></span>Inchaço que aparece sempre no fim da tarde</li>
+                    <li><span></span>Sono leve e despertar com o coração acelerado</li>
+                    <li><span></span>Vontade forte de doce em momentos de estresse</li>
+                    <li><span></span>Ritmo intestinal que muda conforme a semana</li>
+                    <li><span></span>Cansaço que não melhora mesmo dormindo bem</li>
+                    <li><span></span>Pele reativa e sensibilidades novas a alimentos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="respo">
+        <div class="wrap">
+            <div class="respo-inner" data-aos="fade-up">
+                <h3>Isto aqui não substitui terapia nem remédio</h3>
+                <p>
+                    Se você faz acompanhamento psicológico ou usa medicação prescrita, continue. O objetivo
+                    deste ebook é somar uma peça que costuma ficar de fora da conversa — não tirar nenhuma
+                    que já está te ajudando.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="wrap">
+            <h2 data-aos="fade-up">Talvez falte olhar pra um lugar que ninguém olhou ainda</h2>
+            <p data-aos="fade-up">
+                Uma leitura calma, sem termo técnico desnecessário, pra entender o próprio corpo com mais
+                gentileza.
+            </p>
+            <div class="price" data-aos="fade-up"><small>Acesso imediato</small>R$ 38,90</div>
+            <a href="#" class="btn-comprar lg" data-aos="fade-up">Quero Entender Minha Ansiedade — R$ 38,90</a>
+            <p class="note" style="margin-top: 22px">Conteúdo informativo. Não substitui diagnóstico ou tratamento
+                profissional.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <span>Sua Ansiedade Pode Estar Vindo da Barriga</span>
+            <span>© <span id="y"></span> — Todos os direitos reservados</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+        if (window.AOS) {
+            AOS.init({ duration: 750, easing: "ease-out-cubic", once: true, offset: 70 });
+        }
+    </script>
+</body>
+
+</html>
